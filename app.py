@@ -58,7 +58,7 @@ h1 {
 </style>
 """, unsafe_allow_html=True)
 
-set_background('WallpaperDog-20493695.jpg')
+set_background('Designer (4).png')
 movie = pickle.load(open('movies_dict.pkl', 'rb'))
 movies_tags = pd.DataFrame(movie)
 mov = movies_tags['original_title'].values
@@ -84,18 +84,19 @@ genre = [
     "Western"
 ]
 
-st.title('Movie Recommender System')
+st.markdown("""
+    <h1 style="color: #022a30;">Feed Me A Movie</h1>
+    """, unsafe_allow_html=True)
 
 st.markdown("""
-<font size='4'><font color = 'White'>
-Do you love watching movies but don’t know what to watch next? Don’t worry, we have the perfect app for you!
-This app is like a magic wand that can find the best movies for you based on your recent preferences. 
-Just tell us the name of the movie you watched recently, and we will show you a list of movies that match your taste.
-Already filtered by the movie's genre, director, and more. Whether you are in the mood for a comedy, a thriller, or a romance, 
-this app will help you find your next favorite movie. Just enter your recent movie and let the magic happen!<br>
-Devesh wants to know: What movie did you watch recently ?
-</font>
-""", unsafe_allow_html=True)
+    <div style="background-color: rgba(240, 240, 240, 0.5); padding: 10px; border-radius: 10px;">
+        <h4 style="color: #4f5425;">Looking for your next movie to watch? 
+        Our app recommends films based on your recent viewing. 
+        Just input the last movie you watched, and we’ll suggest 
+        similar ones, filtered by genre, director, and more. 
+        Devesh asks: What’s the last movie you watched?</h4>
+    </div>
+    """, unsafe_allow_html=True)
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
@@ -106,4 +107,8 @@ genre_sel = st.selectbox(label='Genre', options=genre,label_visibility= "visible
 if st.button('Here are Some Movie realted to your recent movie. Enjoy!'):
     recomend = recommendations(movie_sel,genre_sel)
     for i in recomend:
-        st.markdown(f'<p style="color:#33ff33;font-size:24px;">{i}</p>', unsafe_allow_html=True)
+        st.markdown(f"""
+            <div style="background-color: rgba(240, 240, 240, 0.5); padding: 10px; border-radius: 10px;">
+                <h6 style="color: #022a30;"> {i}</h6>
+            </div>
+            """, unsafe_allow_html=True)
