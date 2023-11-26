@@ -106,4 +106,4 @@ genre_sel = st.selectbox(label='Genre', options=genre,label_visibility= "visible
 if st.button('Here are Some Movie realted to your recent movie. Enjoy!'):
     recomend = recommendations(movie_sel,genre_sel)
     for i in recomend:
-        st.write(i)
+        st.markdown(f'<p style="color:#33ff33;font-size:24px;">{i}</p>', unsafe_allow_html=True)
