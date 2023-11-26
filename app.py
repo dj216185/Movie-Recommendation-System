@@ -123,3 +123,15 @@ if st.button('Here are Some Movie realted to your recent movie. Enjoy!'):
                                                 Search For Some Other Genre </h3>
                </div>
                """, unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    .reportview-container .main footer {visibility: hidden;}
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("""
+    <footer>
+        <p>Copyright © 2023 Devesh Jaluka</p>
+    </footer>
+    """, unsafe_allow_html=True)
