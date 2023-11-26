@@ -98,17 +98,28 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 movie_sel = st.selectbox(label='Select The Movie', options=mov,label_visibility= "visible" )
 
 genre_sel = st.selectbox(label='Genre', options=genre,label_visibility= "visible" )
 
+n = 0
+
 if st.button('Here are Some Movie realted to your recent movie. Enjoy!'):
     recomend = recommendations(movie_sel,genre_sel)
     for i in recomend:
+        n = n+1
         st.markdown(f"""
             <div style="background-color: rgba(240, 240, 240, 0.5); padding: 10px; border-radius: 10px;">
                 <h6 style="color: #022a30;"> {i}</h6>
             </div>
             """, unsafe_allow_html=True)
+    if n == 0:
+        st.markdown(f"""
+               <div style="background-color: rgba(240, 240, 240, 0.5); padding: 10px; border-radius: 10px;">
+                   <h3 style="color: #022a30;">The Database will be Soon Updated !
+                                                Search For Some Other Genre </h3>
+               </div>
+               """, unsafe_allow_html=True)
