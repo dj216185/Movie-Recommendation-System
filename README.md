@@ -22,15 +22,15 @@ The web app has three main sections:
 
 - The initial page, which shows a welcome message and a brief introduction of the app. 
 
-![Initialpage Image](main_title.jpeg)
+![Initialpage Image](main_title.jpeg.png)
 
 - The search movies section, which allows the user to enter a movie title and click on the “Here are Some Movie realted to your recent movie. Enjoy!” button to find recommendations. 
 
-![Search Image](search_pg.jpeg) 
+![Search Image](search_pg.jpeg.png) 
 
 - The result section, which shows the 10 recommended movies along with their posters and a link to their IMDB page. 
 
-![Result Image](result_pg.jpeg)
+![Result Image](result_pg.jpeg.png)
 
 The user gets the recommended movies filtered by genre and many other aspects. 
 
