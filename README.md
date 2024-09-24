@@ -22,15 +22,15 @@ The web app has three main sections:
 
 - The initial page, which shows a welcome message and a brief introduction of the app. 
 
-![Initialpage Image](Aspose.Words.b8e351c3-ef85-4e66-a7b9-976722f25bbb.002.jpeg)
+![Initialpage Image](main_title.jpeg)
 
 - The search movies section, which allows the user to enter a movie title and click on the “Here are Some Movie realted to your recent movie. Enjoy!” button to find recommendations. 
 
-![Search Image](Aspose.Words.b8e351c3-ef85-4e66-a7b9-976722f25bbb.003.jpeg) 
+![Search Image](search_pg.jpeg) 
 
 - The result section, which shows the 10 recommended movies along with their posters and a link to their IMDB page. 
 
-![Result Image](Aspose.Words.b8e351c3-ef85-4e66-a7b9-976722f25bbb.004.jpeg)
+![Result Image](result_pg.jpeg)
 
 The user gets the recommended movies filtered by genre and many other aspects. 
 
