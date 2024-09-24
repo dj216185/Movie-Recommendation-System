@@ -36,7 +36,7 @@ The user gets the recommended movies filtered by genre and many other aspects.
 
 **References** 
 
-- https://movie-recommendation-system-dj.streamlit.app/
+- https://feedupdj.streamlit.app/
 - https://www.kaggle.com/tmdb/tmdb-movie-metadata  
 - https://www.kaggle.com/tmdb/tmdb-movie-metadata/download 
 
